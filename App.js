@@ -1,66 +1,22 @@
-import React, {useState, useEffect}  from 'react';
-import axios from 'axios';
-import './App.css'
 
-
-const App =() => {
-  const [playerName, setPlayerName] = useState([]);
-  const [playerPic, setPlayerPic] = useState([]);
-  
-
-const fetchData = ()=> {
-  const playerAPI ="http://swapi.dev/api/people/1/";
-  const playerPic = "http://swapi.dev/api/planets/1";
-  
-  const getNBAPlayer = axios.get(playerAPI)
-  const getPlayerPic = axios.get(playerPic)
-  
-  axios.all([getNBAPlayer, getPlayerPic]).then(
-   axios.spread((...allData) =>{
-
-    const allDataPlayer = allData[0].data.name
-  
-    const getNBAPlayerPic = allData[1].data.name;
-
-    setPlayerName(allDataPlayer)
-    setPlayerPic(getNBAPlayerPic)
-   
-   })
-  )
+const getPokemon = ()=> {
+axios.get('https://api.vschool.io/pokemon')
+.then(res =>{
+  renderPokemon(res.data)
+})
+.catch(err => console.log(err))
 }
 
-useEffect(() => {
-  fetchData()
-},[])
+const renderPokemon = (pokemonData) => {
 
+  const pokemonContainer = document.getElementById('pokemonContainer')
+  let pokemonArray = pokemonData.objects[0].pokemon
 
-return (
-  <div className= "App">
-  Super Hero Name is: {playerName} and
-  
-  His hometown is:{playerPic}
-  
- {/* <img src= {playerPic} alt="Luke"  width="1500px" height="500px"/> */}
-  </div>
-);
+for(let i = 0; i < pokemonArray.length; i++){
+  console.log(pokemonArray[i])
+  const pokeNameElement = document.createElement('li')
+  pokeNameElement.textContent = pokemonArray[i].name
+  pokemonContainer.appendChild(pokeNameElement)
 }
 
-
-export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
