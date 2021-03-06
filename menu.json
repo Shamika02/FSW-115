@@ -1,0 +1,27 @@
+{
+  "menu": [
+    {"name":"Appetizers", "sectionA":["Chicken Sticks", "Onion Rings", "Fried Pickels"]},
+    {"name":"Cold Sandwitches", "sectionB":["Turkey Sandwitch", "Ham & Cheese", "Roast Beef"]},
+    {"name":"Hot Sandwitches", "sectionC":["Philly Cheesesteak", "Ham & Cheese", "Spicey Pepperoni"]},
+    {"name":"Deserts", "sectionD":["Apple Pie", "Cheese Cake", "Chocolate Cookies"]},
+    {"name":"Drinks", "sectionE":["Pepsi", "Mountain Dew", "Diet Pepsi"]}
+  ],
+  "appetizers":[{
+    "name":"chicken sticks",
+    "ingredients":"text for above",
+    "description":"text for description"
+  },{
+    "name":"chicken sticks",
+    "ingredients":"text for above",
+    "description":"text for description"
+  }],
+  "cold-sandwitch":[{
+    "name":"chicken sticks",
+    "ingredients":"text for above",
+    "description":"text for description"
+  },{
+    "name":"chicken sticks",
+    "ingredients":"text for above",
+    "description":"text for description"
+  }]
+}
