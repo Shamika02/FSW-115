@@ -1,0 +1,47 @@
+{
+  "appetizers":[{
+    "name":"chicken sticks",
+    "ingredients":"chicken strips fried in olive oil",
+    "description":"deep fried chicken strips"
+  },{
+    "name":"onion rings",
+    "ingredients":"fresh cut onions fried in batter",
+    "description":"deep fried onion rings"
+  }],
+  "Cold-sandwitch":[{
+    "name":"Turkey Sandwitch",
+    "ingredients":"fresh turkey sliced thin on wheat bread",
+    "description":"fresh turkey sandwitch"
+  },{
+    "name":"Ham & Cheese",
+    "ingredients":"sliced ham and your choice of cheese on a bun",
+    "description":"Cold Ham & Cheese"
+  }],
+  "Hot-sandwitch":[{
+    "name":"Philly Cheesesteak",
+    "ingredients":"steak sliced thin with onions and cheddar cheese",
+    "description":"Philly Cheesesteak Sandwitch"
+  },{
+    "name":"Ham & Cheese",
+    "ingredients":"sliced ham and your choice of cheese on a bun",
+    "description":"Hot Ham & Cheese"
+  }],
+  "Desert":[{
+    "name":"Apple Pie",
+    "ingredients":"Fresh apples sliced with cinnamon and baked to perfection",
+    "description":"Hot Apple Pie"
+  },{
+    "name":"Cheesecake",
+    "ingredients":"cream cheese and lemon baked once and chilled",
+    "description":"Cheesecake"
+  }],
+  "Drinks":[{
+    "name":"Sweet Tea",
+    "ingredients":"Tea brewed in the sun and sweeten to taste",
+    "description":"Sweet Tea"
+  },{
+    "name":"Pepsi",
+    "ingredients":"several pepsi products",
+    "description":"Pepsi-Cola"
+  }]
+}
